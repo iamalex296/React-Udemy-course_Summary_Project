@@ -4,10 +4,11 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import Favourites from "./pages/Favourites";
 import NewMeetup from "./pages/NewMeetup";
 import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/Layout";
 
 const App = () => {
   return (
-    <div>
+    <Layout>
       <MainNavigation />
 
       <Switch>
@@ -23,7 +24,7 @@ const App = () => {
           <Favourites />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 };
 
